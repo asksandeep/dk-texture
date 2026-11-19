@@ -763,6 +763,270 @@ footer p {
         padding: 20px;
     }
 }
+
+
+
+/* ===== PREMIUM CONTACT SECTION ===== */
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+    background:
+        radial-gradient(circle at 5% 15%, #ffe9d4 0, transparent 30%),
+        linear-gradient(135deg, #fffaf4, #fff2e7);
+    overflow: hidden;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 55px solid rgba(229, 29, 34, .035);
+    border-radius: 50%;
+    top: -170px;
+    left: -130px;
+}
+
+.contact::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 45px solid rgba(255, 116, 23, .04);
+    border-radius: 50%;
+    bottom: -160px;
+    right: -100px;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.contact-info .eyebrow {
+    display: inline-block;
+    color: #f18a21;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.2;
+    color: #211515;
+    margin: 18px 0;
+}
+
+.contact-info h2 span {
+    color: #e51d22;
+}
+
+.contact-info > p {
+    color: #77716d;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    max-width: 440px;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details {
+    display: grid;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px;
+    background: rgba(255,255,255,.75);
+    border: 1px solid #f0e5da;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+    border-color: #f2a14d;
+    box-shadow: 0 8px 20px #00000008;
+}
+
+.contact-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background: #fff0e2;
+    color: #e51d22;
+    font-size: 21px;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 12px;
+    color: #201515;
+    margin-bottom: 5px;
+}
+
+.contact-item a,
+.contact-item span {
+    font-size: 12px;
+    color: #77716d;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* FORM CARD */
+
+.contact-form {
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #f0e8e0;
+    box-shadow: 0 20px 60px rgba(75, 42, 20, .09);
+    position: relative;
+}
+
+.contact-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #e51d22, #ff7417, #f5bd4b);
+    border-radius: 12px 12px 0 0;
+}
+
+.form-heading {
+    margin-bottom: 28px;
+}
+
+.form-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #211515;
+    margin-bottom: 8px;
+}
+
+.form-heading p {
+    font-size: 13px;
+    color: #888;
+}
+
+/* FORM INPUTS */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #292020;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 16px;
+    background: #fffdfb;
+    border: 1px solid #e8e1dc;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: #333;
+    transition: .3s;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e51d22;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(229,29,34,.07);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* SUBMIT BUTTON */
+
+.contact-form button {
+    width: 100%;
+    padding: 17px;
+    background: linear-gradient(100deg, #e51d22, #f15b24);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-form button:hover {
+    background: #171313;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #e51d2230;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-info h2 {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 600px) {
+    .contact {
+        padding: 65px 0;
+    }
+
+    .contact-form {
+        padding: 28px 20px;
+    }
+
+    .contact-info h2 {
+        font-size: 35px;
+    }
+}
+
+
 </style>
 </head>
 
@@ -1107,69 +1371,130 @@ footer p {
 </div>
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 <div class="container contact-grid">
 
-<div class="contact-info">
-    <div class="eyebrow">Get In Touch</div>
-    <h2>Let's Create Something Beautiful.</h2>
-    <p>
-        Looking for premium wall texture designs?
-        Share your requirements and let us help you
-        find the right decorative finish.
-    </p>
-    <br>
-    <p><strong>Phone:</strong> +919970339420</p>
-    <p><strong>Email:</strong> ozasontakke@gmail.com, hello@dktexture.com</p>
-    <p><strong>Location:</strong> Sai Nagar, Malapure Layout, Hanuman Temple, Jaytala Road, Nagpur- 440036 (MS) India</p>
-</div>
+    <!-- LEFT CONTACT INFORMATION -->
 
-<form class="contact-form" id="contactForm">
+    <div class="contact-info">
 
-    <div class="form-row">
-        <div class="form-group">
-            <label>Your Name *</label>
-            <input type="text" name="name" required placeholder="Your Name">
+        <div class="eyebrow">GET IN TOUCH</div>
+
+        <h2>
+            Let's Create Something
+            <span>Beautiful.</span>
+        </h2>
+
+        <p>
+            Looking for premium wall texture designs?
+            Share your requirements and let us help you
+            find the perfect decorative finish for your space.
+        </p>
+
+        <div class="contact-details">
+
+            <div class="contact-item">
+                <div class="contact-icon">☎</div>
+                <div>
+                    <strong>Call Us</strong>
+                    <a href="tel:+919970339420">
+                        +91 99703 39420
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">✉</div>
+                <div>
+                    <strong>Email Address</strong>
+                    <a href="mailto:ozasontakke@gmail.com">
+                        ozasontakke@gmail.com
+                    </a>
+                    <br>
+                    <a href="mailto:hello@dktexture.com">
+                        hello@dktexture.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">⌖</div>
+                <div>
+                    <strong>Our Location</strong>
+                    <span>
+                        Sai Nagar, Malapure Layout,
+                        Hanuman Temple, Jaytala Road,
+                        Nagpur - 440036 (MS), India
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT ENQUIRY FORM -->
+
+    <form class="contact-form" id="contactForm">
+
+        <div class="form-heading">
+            <h3>Get A Free Quote</h3>
+            <p>Tell us about your project. We would love to hear from you.</p>
+        </div>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" name="name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone"
+                    placeholder="Enter phone number" required>
+            </div>
+
         </div>
 
         <div class="form-group">
-            <label>Phone Number *</label>
-            <input type="tel" name="phone" required placeholder="Phone Number">
+            <label>Interested In</label>
+            <select name="service">
+                <option>Metallic Wall Texture</option>
+                <option>3D Wall Texture</option>
+                <option>Venetian Plaster</option>
+                <option>Concrete Wall Finish</option>
+                <option>Designer Feature Walls</option>
+                <option>Sand & Stone Texture</option>
+                <option>Painting Services</option>
+                <option>Other</option>
+            </select>
         </div>
-    </div>
 
-    <div class="form-group">
-        <label>Interested In</label>
-        <select name="service">
-            <option>Metallic Wall Texture</option>
-            <option>3D Wall Texture</option>
-            <option>Venetian Plaster</option>
-            <option>Concrete Wall Finish</option>
-            <option>Designer Feature Walls</option>
-            <option>Sand & Stone Texture</option>
-            <option>Painting Services</option>
-            <option>Other</option>
-        </select>
-    </div>
+        <div class="form-group">
+            <label>Project Location</label>
+            <input type="text" name="location"
+                placeholder="Enter your area / city">
+        </div>
 
-    <div class="form-group">
-        <label>Project Location</label>
-        <input type="text" name="location" placeholder="Your Area / City">
-    </div>
+        <div class="form-group">
+            <label>Project Details</label>
+            <textarea name="message"
+                placeholder="Tell us about your wall texture requirements..."></textarea>
+        </div>
 
-    <div class="form-group">
-        <label>Project Details</label>
-        <textarea name="message" placeholder="Tell us about your project..."></textarea>
-    </div>
+        <button type="submit">
+            Send Enquiry on WhatsApp ↗
+        </button>
 
-    <button type="submit" class="btn">
-        Send Enquiry on WhatsApp ↗
-    </button>
-
-</form>
+    </form>
 
 </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
