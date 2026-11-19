@@ -1,0 +1,1259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DK Texture & Painting Work's | Premium Wall Texture</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --red: #e51d22;
+    --orange: #ff7417;
+    --gold: #f5bd4b;
+    --dark: #171313;
+    --light: #fff9f1;
+    --text: #252020;
+    --muted: #77716d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a { text-decoration: none; }
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 27px;
+    background: var(--red);
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: .3s;
+    border: 1px solid var(--red);
+}
+
+.btn:hover {
+    background: var(--dark);
+    border-color: var(--dark);
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    border-color: white;
+    margin-left: 10px;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--dark);
+}
+
+/* TOPBAR */
+
+.topbar {
+    background: var(--dark);
+    color: white;
+    padding: 9px 0;
+    font-size: 12px;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px #00000010;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 85px;
+}
+
+.logo img {
+    width: 280px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--red);
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    background:
+    linear-gradient(90deg, #171313ed 0%, #171313b5 55%, #17131340 100%),
+    url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=2000&q=85')
+    center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 100px 0;
+}
+
+.eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(43px, 6vw, 75px);
+    line-height: 1.12;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    max-width: 590px;
+    color: #e9e2dc;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 32px;
+}
+
+.hero-features {
+    display: flex;
+    gap: 35px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-features strong {
+    display: block;
+    color: var(--gold);
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.hero-features span {
+    font-size: 12px;
+}
+
+/* INTRO STRIP */
+
+.intro-strip {
+    background: var(--light);
+    padding: 24px 0;
+}
+
+.intro-strip .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.intro-strip span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.intro-strip span::before {
+    content: "✦";
+    color: var(--red);
+    margin-right: 9px;
+}
+
+/* COMMON SECTION */
+
+section {
+    padding: 90px 0;
+}
+
+.section-title {
+    max-width: 700px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.section-title small {
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    font: 700 clamp(30px, 4vw, 45px)/1.2 'Playfair Display', serif;
+    margin: 15px 0;
+}
+
+.section-title p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* TEXTURE SERVICES */
+
+.texture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.texture-card {
+    background: white;
+    border: 1px solid #eee8e2;
+    overflow: hidden;
+    transition: .35s;
+}
+
+.texture-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px #00000012;
+}
+
+.texture-card img {
+    height: 245px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.texture-card:hover img {
+    transform: scale(1.05);
+}
+
+.texture-card .content {
+    padding: 25px;
+}
+
+.texture-card small {
+    color: var(--red);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.texture-card h3 {
+    font: 700 21px 'Playfair Display', serif;
+    margin: 10px 0;
+}
+
+.texture-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* ABOUT */
+
+.about {
+    background: var(--light);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    height: 490px;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.about-image::after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    width: 50%;
+    height: 45%;
+    border: 8px solid var(--gold);
+}
+
+.about-content h2 {
+    font: 700 43px/1.2 'Playfair Display', serif;
+    margin: 17px 0;
+}
+
+.about-content p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style: none;
+    margin: 25px 0;
+}
+
+.about-list li {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 13px 0;
+}
+
+.about-list li::before {
+    content: "✓";
+    color: var(--red);
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+/* WHY CHOOSE US */
+
+.why-us {
+    background: var(--dark);
+    color: white;
+}
+
+.why-us .section-title p {
+    color: #bbb0a8;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    padding: 28px 20px;
+    border: 1px solid #ffffff20;
+    text-align: center;
+}
+
+.why-card .icon {
+    font-size: 35px;
+    color: var(--gold);
+}
+
+.why-card h3 {
+    font-size: 17px;
+    margin: 15px 0 10px;
+}
+
+.why-card p {
+    color: #bbb0a8;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid img {
+    height: 260px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* SECONDARY PAINTING */
+
+.painting {
+    background: #fff4e8;
+    padding: 55px 0;
+}
+
+.painting .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.painting h2 {
+    font: 700 30px 'Playfair Display', serif;
+    margin-bottom: 8px;
+}
+
+.painting p {
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* PROCESS */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.process-card {
+    border-top: 3px solid var(--orange);
+    padding-top: 22px;
+}
+
+.process-card strong {
+    color: var(--red);
+    font: 700 35px 'Playfair Display', serif;
+}
+
+.process-card h3 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.process-card p {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* CTA */
+
+.cta {
+    background: linear-gradient(110deg, #c9161d, #f05a18);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.cta h2 {
+    font: 700 clamp(30px, 4vw, 43px) 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.cta .btn {
+    background: var(--dark);
+    border-color: var(--dark);
+}
+
+/* CONTACT */
+
+.contact {
+    background: var(--light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 55px;
+}
+
+.contact-info h2 {
+    font: 700 40px 'Playfair Display', serif;
+    margin: 15px 0;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.contact-form {
+    padding: 32px;
+    background: white;
+    box-shadow: 0 10px 35px #00000008;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    font: 13px 'DM Sans', sans-serif;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--red);
+}
+
+.form-group textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 180px;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #bdb2ab;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 22px 0;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 14px;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff20;
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+/* WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 55px;
+    height: 55px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    z-index: 1000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .texture-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+@media(max-width: 700px) {
+    .topbar .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 25px 5%;
+        background: white;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar > .btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 590px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid img {
+        height: 190px;
+    }
+
+    .painting .container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px) {
+    section {
+        padding: 65px 0;
+    }
+
+    .texture-grid,
+    .gallery-grid,
+    .why-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-features {
+        gap: 20px;
+    }
+
+    .hero .btn {
+        margin: 5px 0;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+    <div class="container">
+        <span>Premium Wall Texture & Decorative Finishes</span>
+        <span>Let's Transform Your Walls!</span>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+<div class="container navbar">
+
+<a href="#home" class="logo">
+    <img src="assets/dk-logo.png" alt="DK Texture & Painting Works">
+</a>
+
+<button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+    ☰
+</button>
+
+<ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#textures">Wall Textures</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+<a href="#contact" class="btn">Get A Quote ↗</a>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-content">
+
+    <div class="eyebrow">Beyond Ordinary Walls</div>
+
+    <h1>
+        Transform Your Walls
+        Into <span>Masterpieces.</span>
+    </h1>
+
+    <p>
+        Discover premium wall textures, artistic finishes
+        and decorative surface designs that bring elegance,
+        depth and personality to your interiors.
+    </p>
+
+    <a href="#textures" class="btn">Explore Textures ↗</a>
+
+    <a href="#contact" class="btn btn-outline">
+        Get Free Quote
+    </a>
+
+    <div class="hero-features">
+        <div>
+            <strong>01</strong>
+            <span>Creative Textures</span>
+        </div>
+        <div>
+            <strong>02</strong>
+            <span>Premium Finishes</span>
+        </div>
+        <div>
+            <strong>03</strong>
+            <span>Unique Designs</span>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- INTRO STRIP -->
+<div class="intro-strip">
+<div class="container">
+    <span>Premium Wall Finishes</span>
+    <span>Artistic Texture Designs</span>
+    <span>Modern Feature Walls</span>
+    <span>Interior Surface Solutions</span>
+</div>
+</div>
+
+<!-- TEXTURE SERVICES -->
+<section id="textures">
+<div class="container">
+
+<div class="section-title">
+    <small>Our Speciality</small>
+    <h2>Explore Our Premium Wall Textures</h2>
+    <p>
+        Discover unique decorative finishes designed
+        to transform ordinary walls into extraordinary spaces.
+    </p>
+</div>
+
+<div class="texture-grid">
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=85" alt="Metallic wall texture">
+        <div class="content">
+            <small>01 / PREMIUM FINISH</small>
+            <h3>Metallic Wall Texture</h3>
+            <p>Elegant metallic effects that add richness,
+            shine and sophistication to your interiors.</p>
+        </div>
+    </div>
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=85" alt="Decorative 3D wall">
+        <div class="content">
+            <small>02 / DESIGNER FINISH</small>
+            <h3>3D Wall Texture</h3>
+            <p>Creative surface patterns that bring depth,
+            dimension and a striking visual appeal.</p>
+        </div>
+    </div>
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=900&q=85" alt="Venetian plaster finish">
+        <div class="content">
+            <small>03 / LUXURY FINISH</small>
+            <h3>Venetian Plaster</h3>
+            <p>Beautiful plaster finishes inspired by
+            classic luxury and contemporary interiors.</p>
+        </div>
+    </div>
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85" alt="Concrete wall texture">
+        <div class="content">
+            <small>04 / MODERN FINISH</small>
+            <h3>Concrete Wall Finish</h3>
+            <p>Modern concrete-inspired surfaces for
+            elegant and minimal interior spaces.</p>
+        </div>
+    </div>
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=900&q=85" alt="Designer feature wall">
+        <div class="content">
+            <small>05 / ARTISTIC FINISH</small>
+            <h3>Designer Feature Walls</h3>
+            <p>Make a statement with artistic wall designs
+            that become the highlight of your space.</p>
+        </div>
+    </div>
+
+    <div class="texture-card">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=85" alt="Stone texture wall">
+        <div class="content">
+            <small>06 / NATURAL FINISH</small>
+            <h3>Sand & Stone Texture</h3>
+            <p>Natural-looking surface finishes that create
+            warmth and beautiful wall patterns.</p>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+<div class="container about-grid">
+
+<div class="about-image">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1000&q=85" alt="Premium textured interior">
+</div>
+
+<div class="about-content">
+
+    <div class="eyebrow">About DK Texture & Painting Work's</div>
+
+    <h2>We Believe Every Wall Deserves To Be Beautiful.</h2>
+
+    <p>
+        At DK Texture & Painting Work's, we focus on
+        creative wall textures and decorative finishes
+        that transform everyday spaces into beautiful
+        environments.
+    </p>
+
+    <p>
+        From elegant metallic effects to artistic feature
+        walls, we help you explore designs that reflect
+        your personal style and vision.
+    </p>
+
+    <ul class="about-list">
+        <li>Creative Decorative Wall Designs</li>
+        <li>Premium Texture Finish Options</li>
+        <li>Attention To Detail</li>
+        <li>Residential & Commercial Projects</li>
+    </ul>
+
+    <a href="#contact" class="btn">Discuss Your Project ↗</a>
+
+</div>
+</div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us">
+<div class="container">
+
+<div class="section-title">
+    <small>Why Choose Us</small>
+    <h2>What Makes Our Wall Finishes Special?</h2>
+    <p>Creative ideas and attention to detail for
+    beautiful and distinctive wall surfaces.</p>
+</div>
+
+<div class="why-grid">
+
+    <div class="why-card">
+        <div class="icon">✦</div>
+        <h3>Creative Designs</h3>
+        <p>Distinctive wall texture ideas
+        for every kind of interior.</p>
+    </div>
+
+    <div class="why-card">
+        <div class="icon">◇</div>
+        <h3>Premium Finishes</h3>
+        <p>Beautiful surface effects
+        and decorative finishes.</p>
+    </div>
+
+    <div class="why-card">
+        <div class="icon">✧</div>
+        <h3>Detail Oriented</h3>
+        <p>Careful attention to design
+        and finishing details.</p>
+    </div>
+
+    <div class="why-card">
+        <div class="icon">❖</div>
+        <h3>Custom Solutions</h3>
+        <p>Texture concepts to match
+        your space and preferences.</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<div class="container">
+
+<div class="section-title">
+    <small>Our Inspiration Gallery</small>
+    <h2>Beautiful Walls. Endless Possibilities.</h2>
+    <p>
+        Explore texture styles and decorative wall
+        finishes for your next interior makeover.
+    </p>
+</div>
+
+<div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=85" alt="Wall texture inspiration">
+    <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?w=900&q=85" alt="Luxury wall design">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85" alt="Modern wall finish">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=85" alt="Interior wall texture">
+    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=85" alt="Decorative interior">
+    <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?w=900&q=85" alt="Feature wall design">
+</div>
+
+</div>
+</section>
+
+<!-- SECONDARY PAINTING SERVICE -->
+<section class="painting">
+<div class="container">
+
+<div>
+    <div class="eyebrow">Additional Service</div>
+    <h2>Professional Painting Solutions</h2>
+    <p>Interior and exterior painting services to complete
+    your space with a fresh, beautiful look.</p>
+</div>
+
+<a href="#contact" class="btn">Enquire Now ↗</a>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section>
+<div class="container">
+
+<div class="section-title">
+    <small>Our Working Process</small>
+    <h2>From Idea To Beautiful Walls</h2>
+    <p>A simple process to help bring your wall design vision to life.</p>
+</div>
+
+<div class="process-grid">
+
+    <div class="process-card">
+        <strong>01</strong>
+        <h3>Consultation</h3>
+        <p>Understand your space, requirements and preferred design.</p>
+    </div>
+
+    <div class="process-card">
+        <strong>02</strong>
+        <h3>Texture Selection</h3>
+        <p>Explore suitable texture patterns, finishes and colours.</p>
+    </div>
+
+    <div class="process-card">
+        <strong>03</strong>
+        <h3>Application</h3>
+        <p>Carry out the selected texture work with care and precision.</p>
+    </div>
+
+    <div class="process-card">
+        <strong>04</strong>
+        <h3>Final Finish</h3>
+        <p>Complete your project with the selected decorative look.</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Give Your Walls A Unique Identity!</h2>
+    <p>Let's create beautiful spaces with premium wall textures.</p>
+    <a href="#contact" class="btn">Get Your Free Quote ↗</a>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<div class="container contact-grid">
+
+<div class="contact-info">
+    <div class="eyebrow">Get In Touch</div>
+    <h2>Let's Create Something Beautiful.</h2>
+    <p>
+        Looking for premium wall texture designs?
+        Share your requirements and let us help you
+        find the right decorative finish.
+    </p>
+    <br>
+    <p><strong>Phone:</strong> +91 99703 39420</p>
+    <p><strong>Email:</strong> ozasontakke@gmail.com, hello@dktexture.com</p>
+    <p><strong>Location:</strong> Sai nagar, malapure layout, hanuman temple, jaytala road, nagpur- 440036</p>
+</div>
+
+<form class="contact-form" id="contactForm">
+
+    <div class="form-row">
+        <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" name="name" required placeholder="Your Name">
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" name="phone" required placeholder="Phone Number">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Interested In</label>
+        <select name="service">
+            <option>Metallic Wall Texture</option>
+            <option>3D Wall Texture</option>
+            <option>Venetian Plaster</option>
+            <option>Concrete Wall Finish</option>
+            <option>Designer Feature Walls</option>
+            <option>Sand & Stone Texture</option>
+            <option>Painting Services</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Project Location</label>
+        <input type="text" name="location" placeholder="Your Area / City">
+    </div>
+
+    <div class="form-group">
+        <label>Project Details</label>
+        <textarea name="message" placeholder="Tell us about your project..."></textarea>
+    </div>
+
+    <button type="submit" class="btn">
+        Send Enquiry on WhatsApp ↗
+    </button>
+
+</form>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+
+    <!-- <img src="assets/dk-logo.png" class="footer-logo" alt="DK Logo"> -->
+
+    <h3>DK Texture & Painting Work's</h3>
+
+    <p>Premium Wall Texture & Decorative Finishes</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#textures">Wall Textures</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © <span id="year"></span> DK Texture & Painting Work's.
+        All Rights Reserved.
+    </p>
+
+</div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="#" class="whatsapp" id="whatsappLink" aria-label="WhatsApp">
+    ☎
+</a>
+
+<script>
+
+// Replace with client's actual WhatsApp number.
+// Format: Country code + mobile number.
+// Example: 919876543210
+
+const whatsappNumber = "919970339420";
+
+// Mobile Navigation
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("active");
+    });
+});
+
+// Dynamic Year
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+// WhatsApp Link
+
+document.getElementById("whatsappLink").href =
+    "https://wa.me/" + whatsappNumber;
+
+// Contact Form
+
+document.getElementById("contactForm")
+.addEventListener("submit", function(e) {
+
+    e.preventDefault();
+
+    if (whatsappNumber.includes("X")) {
+        alert("Please add the client's WhatsApp number in the JavaScript code.");
+        return;
+    }
+
+    const formData = new FormData(this);
+
+    const message =
+        "Hello DK Texture & Painting Work's!\n\n" +
+        "Name: " + formData.get("name") + "\n" +
+        "Phone: " + formData.get("phone") + "\n" +
+        "Service: " + formData.get("service") + "\n" +
+        "Location: " + formData.get("location") + "\n" +
+        "Details: " + formData.get("message");
+
+    const url =
+        "https://wa.me/" + whatsappNumber +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
